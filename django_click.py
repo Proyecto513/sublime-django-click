@@ -1,5 +1,6 @@
 import os
-import sublime, sublime_plugin
+import sublime
+import sublime_plugin
 try:
     from utils import parse_tag
 except ImportError:
@@ -18,7 +19,9 @@ class DjangoClickCommand(sublime_plugin.TextCommand):
 
         if tag:
             # get the base-path of current file
-            base, current_file = self.view.file_name().split('%(separator)stemplates%(separator)s' % dict(separator=os.path.sep), 1)
+            base, current_file = self.view.file_name().split(
+                '%(separator)stemplates%(separator)s' % dict(
+                    separator=os.path.sep), 1)
 
             for one in targets:
                 # get the target file path

@@ -1,7 +1,4 @@
-**Sorry, I cannot keep this extension up-to-date anymore. Please see/do forks.**
-
----------------------
-
+### New Maintainer 
 # Django Templates Click (Sublime Text package)
 
 Open django extend/include template tags (files) by ctrl-click.

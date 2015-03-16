@@ -14,8 +14,6 @@ def parse_tag(line):
 
     line = re.sub(RE_PARAMS, "", line)
 
-    print(line)
-
     match = re.match(RE_BLOCK, line)
 
     if match:

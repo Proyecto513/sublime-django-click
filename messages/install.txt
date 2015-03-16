@@ -10,7 +10,6 @@ I really encourage all the users of django click to switch to "Django Manage Com
 
 ### Open django templates in a click
 
-by the moment of this update "Django click" function is even with the one inside "Django Manage Commands"
+by the moment of this update "Django click" function is even with the one inside "Django Manage Commands"qu
 
 ### [Issues?](https://github.com/vladimirnani/DjangoCommands/issues)
-

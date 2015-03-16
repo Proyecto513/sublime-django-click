@@ -1,6 +1,4 @@
 import unittest
-import sublime
-import sublime_plugin
 try:
     from utils import parse_tag
 except ImportError:
@@ -33,6 +31,8 @@ class MatchTests(unittest.TestCase):
              "    {% include 'lorem-ipsum/__dolorem' %}"),
             (('includeblocks', ['_base/base.html', '_base templates/base.html']),
                 "{% includeblocks '_base/base.html' '_base templates/base.html' %}"),
+            (('include', ['base/base.html']),
+                "{% include 'base/base.html' with foo='bar' %}")
         ]
 
         for exp, line in cases:
